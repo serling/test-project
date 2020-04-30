@@ -1,0 +1,10 @@
+- https://nextjs.org/docs/advanced-features/custom-app
+- https://nextjs.org/docs/advanced-features/custom-document
+- https://nextjs.org/docs/advanced-features/custom-error-page
+- https://sergiodxa.com/articles/swr/intro/
+- https://sergiodxa.com/articles/render-as-you-fetch/
+- router animations on page load
+
+- welcome message toast from bottom: "Welcome, stranger!"
+- opacity-filling, right moving, menu icon from top right
+- fix: pagination first click removes all items?

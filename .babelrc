@@ -1,0 +1,14 @@
+// Warning: When you define a custom PostCSS configuration file, Next.js completely disables the default behavior.
+
+{
+  "presets": [
+    [
+      "next/babel",
+      {
+        "styled-jsx": {
+          "plugins": ["styled-jsx-plugin-sass"]
+        }
+      }
+    ]
+  ]
+}
