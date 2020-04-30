@@ -1,5 +1,3 @@
-// import isServer from 'utilities/is-server';
-// import PropTypes from 'prop-types';
 import Page from 'layout/page';
 import Layout from 'layout/layout';
 

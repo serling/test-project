@@ -63,6 +63,6 @@ const Header = ({ navLinks }) => {
   );
 };
 
-Header.propTypes = {};
+Header.propTypes = { navLinks: PropTypes.array };
 
 export default Header;

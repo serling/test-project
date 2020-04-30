@@ -8,7 +8,7 @@ const Home = ({ title, description }) => {
         <Heading text={title} level={1} />
         <p className="home__lead">{description}</p>
       </div>
-      <div className="home__content">[HARD CODED CONTENT]</div>
+      <div className="home__content"></div>
     </div>
   );
 };
