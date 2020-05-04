@@ -11,6 +11,8 @@ const Footer = ({}) => {
           .footer {
             padding: 1rem 0;
             border-top: 1px solid lightgray;
+            background-color: #3a3939;
+            color: white;
 
             &__content {
               padding: 0 0.5rem;

@@ -2,6 +2,7 @@ import PropTypes from 'prop-types';
 import Head from 'next/head';
 
 // import EventContextProvider from 'contexts/event-context-provider';
+import { ModalProvider } from 'components/modal/modal-context';
 import Layout from './layout';
 
 const Page = ({ children, title, description, theme }) => {
@@ -17,7 +18,7 @@ const Page = ({ children, title, description, theme }) => {
         ></meta>
         <link rel="icon" href="/icons/favicon.ico" />
       </Head>
-      {children}
+      <ModalProvider>{children}</ModalProvider>
       <style jsx global>{``}</style>
     </>
   );

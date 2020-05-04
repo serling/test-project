@@ -1,17 +1,20 @@
 import { meta, content as pageProps } from 'data/pages/home';
+import isServer from 'utilities/is-server';
 
 import HomeTemplate from 'templates/home';
 import AsyncPageContent from 'components/async-page-content/async-page-content';
 
 const HomePage = (props) => {
   return (
-    <AsyncPageContent
-      {...props}
-      endpoint="/api/home"
-      itemRenderer={(data) => {
-        return <HomeTemplate {...data} />;
-      }}
-    />
+    <div>
+      <AsyncPageContent
+        {...props}
+        endpoint="/api/home"
+        itemRenderer={(data) => {
+          return <HomeTemplate {...data} />;
+        }}
+      />
+    </div>
   );
 };
 

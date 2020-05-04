@@ -1,18 +1,22 @@
+import { useContext } from 'react';
 import Link from 'next/link';
 import PropTypes from 'prop-types';
+import { ModalContext } from 'components/modal/modal-context';
 
 import Button from 'components/button/button';
 
 const Header = ({ navLinks }) => {
+  const { handleModal } = useContext(ModalContext);
+
   const handleOnClick = () => {
-    console.log('clicked menu item');
+    handleModal();
   };
 
   return (
     <>
       <div className="header">
         <div className="header__content">
-          {navLinks && (
+          {/* {navLinks && (
             <menu className="header__menu">
               {navLinks.map((link, index) => {
                 const { text, href } = link;
@@ -25,9 +29,9 @@ const Header = ({ navLinks }) => {
                 );
               })}
             </menu>
-          )}
+          )} */}
           <div className="header__button">
-            <Button onClick={handleOnClick} text="MENU" />
+            <Button onClick={handleOnClick} text="OPEN" />
           </div>
         </div>
       </div>
@@ -37,10 +41,9 @@ const Header = ({ navLinks }) => {
           padding: 1rem 0;
 
           &__content {
-            padding: 0 0.5rem;
             display: flex;
             align-items: center;
-            justify-content: space-between;
+            justify-content: flex-end;
             max-width: 980px;
             margin: 0 auto;
           }

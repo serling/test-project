@@ -8,3 +8,5 @@
 - welcome message toast from bottom: "Welcome, stranger!"
 - opacity-filling, right moving, menu icon from top right
 - fix: pagination first click removes all items?
+- animations on page transition, async get
+- move AsyncPageContent another step down for isServer to work propertly (not in nextjs page)
